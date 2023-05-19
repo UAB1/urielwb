@@ -1,0 +1,875 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+:root{
+    --fuente1: 'Montserrat', sans-serif;
+    --fuente2: 'Secular One', sans-serif;
+    --fuente3: 'Rubik', sans-serif;
+    --colorg: linear-gradient(to right, rgb(15, 140, 162), rgb(35, 55, 203),rgb(94, 92, 201),rgb(45, 48, 255) );
+    --colorg2: linear-gradient(60deg, rgb(85, 83, 189), rgb(40, 176, 151),rgb(149, 39, 222),rgb(134, 43, 144) );
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*------codigo header------ */
+
+
+/*------Inicio nav------*/
+.contenedor nav {
+    background-color: rgba(91, 91, 91, 0.128);
+    backdrop-filter: blur(5px) ;
+    -webkit-backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    height: 50px;
+    cursor: pointer;
+}
+
+.contenedor .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.contenedor ul{
+    list-style: none;
+    margin: 0;
+    display: flex;
+}
+
+.contenedor ul a{
+    justify-content: space-around;
+    display: flex;
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    transition: all .5s ease;
+}
+
+.contenedor ul a:hover{
+    text-decoration:underline;
+}
+
+.contenedor .btn_nav{
+    color: rgb(255, 255, 255);
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+.contenedor .btn_nav i{
+    font-size: 30px;
+}
+.contenedor .btn_nav:hover{
+    margin-top: -10px;
+}
+
+/*------Fin nav------*/
+/* ------ I Banner ------ */
+.contenedor header {
+    background-image:linear-gradient(to right, rgba(0, 0, 0, 0.766),  rgba(0, 0, 0, 0.772)), url(../imagenes/banner.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: inline-block;
+}
+.texto__banner h1{
+    border-bottom: 5px white solid;
+    margin-bottom: 10px;
+    transition: all 500ms ease;
+}
+
+
+.texto__banner h1:hover{
+    font-size: 80px;
+    margin-bottom: 15px;
+}
+
+.contenedor .texto__banner{
+    color: white;
+    display: flex;
+    margin-top: 50px;
+    width: auto;
+    height: 300px;
+    font-family: 'M PLUS 1 Code', sans-serif;
+    font-size: 50px;
+    flex-direction: column;
+    align-items:center;
+
+
+}
+.contenedor .texto__banner p{
+    font-size: 20px;
+    margin-left:30px ;
+    width: 550px;
+    height: 100px;
+    text-align: center;
+}
+
+.contenedor .texto__banner span{
+    color: rgb(122, 230, 215);
+}
+
+/* ------F Banner ------ */
+
+
+/* ------I iniciocont */
+.contenedor .inicio_cont {
+   margin: 40px;
+   display: flex;
+   justify-content: center;
+   font-family: var(--fuente1);
+   flex-direction: column;
+   align-items: center;
+}
+
+
+.contenedor .inicio_cont .inicio_cont__{
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    text-align: justify;
+}
+.contenedor .inicio_cont .inicio_cont__ h1{
+    text-align: center;
+    margin: 10px 0 10px 0;
+    color: rgb(70, 70, 188);
+    border-bottom: 10px solid ;
+    padding-bottom: 30px;
+}
+.contenedor .inicio_cont .inicio_cont__ p{
+    margin-top: 10px;
+}
+
+.inicio_cont .imgcont{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "img1 img2 img3"
+                         "p1    p2    p3";
+    margin: 100px;
+    position: relative;
+}
+
+.contenedor .inicio_cont img{
+    width: 300px;
+    margin: 40px 60px 0 60px;
+}
+.inicio_cont .imgcont .svg1{
+    grid-area: img1;
+    margin: auto;
+    position: relative;
+    z-index: 100;
+}
+
+.inicio_cont .imgcont .svg2{
+     grid-area: img2;
+     margin: auto;
+     z-index: 100;
+}
+.inicio_cont .imgcont .svg3{
+    grid-area: img3;
+    margin: auto;
+    z-index: 100;
+}
+
+.inicio_cont .imgcont p{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.contenedor .inicio_cont h2{
+    margin-top: 20px;
+    color: rgb(167, 48, 113);
+    text-align: center;
+}
+
+/* ------I main (contenido)----- */
+.contenedor .contenido__cont{
+    background-color: rgb(255, 255, 255);
+    font-family: var(--fuente1);
+    display: grid;
+    grid-template-columns: (3, 1fr);
+    grid-template-rows: 100px 1fr 100px 1fr;
+    grid-template-areas: "titulo titulo titulo "
+                        "texto texto texto"
+                        "texto texto texto"
+                        "img img img"
+
+;
+    margin: 20px 80px 20px 80px;
+    box-shadow: 0px 15px 10px gray;
+    height: 800px;
+}
+
+.contenedor .contenido__cont .contenido_texto_{
+    grid-area: texto;
+    font-size: 15px;
+    color:rgb(0, 0, 0);
+    text-align: justify;
+    height: auto;
+}
+.contenedor .contenido__cont .contenido_texto_ > p{
+    background-color: rgba(255, 255, 255, 0.746) ;
+    padding: 8px;
+}
+
+.contenedor .titulo_cont{
+    grid-area: titulo;
+    color: white;
+    height: auto;
+    background: linear-gradient(to right, rgb(42, 42, 103),rgb(87, 35, 231) ,rgb(0, 99, 221) );
+    justify-content: center;
+    align-items:center ;
+    display: flex;
+
+}
+
+ .contenedor .contenido__cont .imagen_cont{
+    background-image: url(../imagenes/uriel.jpg);
+    background-position: center;
+    width: 100%;
+    grid-area: img;
+}
+
+/* ------F main (contenido)----- */
+
+
+/* ------Info Cards -------- */
+.contenedor .titulo2-cont article h1{
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-family: var(--fuente2);
+    font-size: 40px;
+    justify-content: center;
+    background: var(--colorg);
+    width: 400px;
+    margin: auto;
+
+
+}
+.contenedor .info-cards {
+    width: 1200px;
+    margin: auto;
+}
+.contenedor .info-cards article{
+    font-family: var(--fuente1);
+
+    margin: 20px;
+    font-size:15px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 10px 10px gray;
+    position: relative;
+}
+ .contenedor .info-cards article p{
+    width: 900px;
+    height: 200px;
+    padding: 1rem;
+    display: flex ;
+    flex-direction: column;
+ }
+ .contenedor .info-cards article p .impar {
+    margin-left: auto;
+ }
+
+ .contenedor .info-cards article::after{
+    content: "";
+    position: absolute;
+    height: 30%;
+    width: 100%;
+    background-color: rgba(18, 23, 65, 0.776);
+    overflow: hidden;
+    z-index: -1;
+    bottom: 0;
+ }
+
+ .contenedor .info-cards article button{
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+ }
+ .contenedor .info-cards article button:hover{
+    background-color: rgba(135, 135, 135, 0.11);
+    border: 2px solid rgb(52, 147, 191);
+    color: rgb(52, 147, 191) ;
+ }
+.contenedor .info-cards article img{
+    width: 18rem;
+    height: 18rem;
+    background-color: black;
+}
+.contenedor .info-cards :nth-child(even){
+    display:flex;
+    flex-direction: row-reverse;
+}
+
+
+/* ------I Cards botones */
+.contenedor .card_cont{
+    display: flex;
+    font-family: var(--fuente1);
+    margin-top: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor .card_cont .card{
+    width: 300px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    box-shadow: 0px 10px 10px gray;
+}
+
+.card_cont .card h3{
+    background: var(--colorg2);
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    font-size: 35px;
+}
+
+.card_cont .card h3 span{
+    border-bottom: 5px solid rgb(255, 255, 255);
+}
+
+.card_cont .card .texto__card {
+    margin: auto;
+}
+.card_cont .card button{
+    margin-top: 10px;
+    width: 200px;
+    height: 40px;
+    text-transform: uppercase;
+    background: rgb(0, 110, 134);
+    border: none;
+    color:white;
+    font-weight: 5px;
+    font-size: 15;
+}
+
+.card_cont .card button a{
+    text-decoration: none;
+    color:white;
+    width: 100%;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.card_cont .card a:active{
+    background: rgb(5, 69, 83);
+}
+
+/* ------Info Cards -------- */
+
+/* slider */
+.contenedor .slider-cont{
+    width: 900px;
+    height: 300px;
+    overflow: hidden;
+    margin: 50px auto 0 ;
+
+}
+
+.contenedor .slider-cont ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    height: 100%;
+    animation: slider2 15s infinite ease-in-out;
+}
+
+.slider-cont li{
+    list-style: none;
+    width: 100%;
+}
+.slider-cont img{
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes slider2{
+    0%{margin-left:0%;}
+    20%{margin-left:0%;}
+
+    25%{margin-left:-135%;}
+    45%{margin-left:-135%;}
+
+    50%{margin-left:-285%;}
+    70%{margin-left:-285%;}
+
+
+}
+
+/* -------FOOTER------- */
+.contenedor .footer__cont{
+    background: rgb(27, 27, 54);
+    color: white;
+    display: grid;
+    grid-template-columns: (3, 1fr);
+    grid-template-rows: (3, 1fr);
+    grid-template-areas: "logo tslp contacto"
+                        "logo  tslp void"
+                        "mapa texto copy";
+    font-family: var(--fuente3);
+    margin-top: 2rem;
+    padding: 20px;
+}
+
+.contenedor .footer__cont i{
+    font-size: 150px;
+    margin: auto;
+    
+}
+.footer__cont article{
+    display:flex;
+    width: fit-content;
+    height: 200px;
+    flex-direction: column;
+    text-align: justify;
+    margin: auto;
+}
+.footer__cont .contacto{
+    grid-area: contacto;
+}
+
+
+.footer__cont article .logos {
+    font-size: 50px;
+    margin: 10px;
+    background:rgb(34, 34, 116);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+footer .mapa{
+    grid-area:mapa;
+    border-radius: 3rem;
+    height: 300px;
+}
+
+footer .frase{
+    grid-area: texto;
+    font-size: 25px;
+    margin: auto;
+}
+
+@media (max-width: 1024px) {
+
+    .contenedor .info-cards article{
+        width: 100%;
+        margin: 20px;
+    }
+    .contenedor .info-cards {
+        width: 90%;
+    }
+    
+    .contenedor .inicio_cont .inicio_cont__{
+        width: 90%;
+    }
+    .texto__banner h1{
+        font-size: 50px;
+    }
+    
+    .contenedor .inicio_cont img{
+        width: 320px;
+        margin: 40px auto 0 auto;
+        padding: 3rem;
+    }
+
+
+    
+    .contenedor .inicio_cont {
+        margin: 5rem auto 5rem auto;
+     }
+     .contenedor .info-cards article p{
+        font-size:14px;
+     }
+     .texto__banner h1:hover{
+        font-size: 60px;
+    }   
+
+    footer .mapa{
+        height: 300px;
+        width: 300px;
+    }
+    
+}
+
+@media (max-width:768px) {
+
+    .contenedor .slider-cont{
+        width: 600px;
+        height: 300px;
+}
+        
+    .contenedor .inicio_cont img{
+        width: 250px;
+        margin: 40px auto 0 auto;
+        padding: 3rem;
+    }
+
+    .contenedor .footer__cont{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "logo tslp "
+                              "mapa texto "
+                            "contacto contacto ";
+    }
+
+    footer .mapa{
+        height: 250px;
+        width: 250px;
+        grid-area: mapa;
+        margin: auto;
+    }
+    .footer__cont article .logos{
+        width: 80px;
+        height: 80px;
+    }
+    footer .contacto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedor .contenido__cont{
+        grid-template-rows: 100px 1fr 1fr 1fr 1fr 1fr 1fr 1fr  ;
+        grid-template-areas: "titulo titulo titulo "
+                            "texto texto texto"
+                            "texto texto texto"
+                            "texto texto texto"
+                            "texto texto texto"
+                             "texto texto texto"
+                            "img img img"
+                            "img img img"
+                            "img img img"
+    
+    ;
+        height: 900px;
+    }
+    .contenedor .info-cards article{
+       height: 28rem;
+       margin:4rem auto;
+    }
+
+    .contenedor .card_cont{
+        display: flex;
+        font-family: var(--fuente1);
+        margin-top: 3rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedor .card_cont .card{
+        width: 230px;
+        height: 400px;
+        margin: auto;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        box-shadow: 0px 10px 10px gray;
+    }
+    
+    .contenedor nav {
+        font-size: 12px;
+    }
+
+    .contenedor nav ul li a{
+        font-size: 14px;
+        margin: .5rem auto auto auto;
+    }
+}
+
+@media (max-width:720px) {
+    .texto__banner h1{
+        font-size: 50px;
+    }
+    .texto__banner h1:hover{
+        font-size: 60px;
+    }   
+    .contenedor .info-cards article{
+        height: 30rem;
+        margin:4rem auto;
+     }
+     .inicio_cont .imgcont{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas: "img1"
+                             "p1"
+                             "img2"
+                             "p2" 
+                             "img3"  
+                             "p3";
+        margin: 100px;
+        position: relative;
+    
+    }
+    .contenedor .inicio_cont img{
+        width: 400px;
+        margin: 40px auto 0 auto;
+        padding: 3rem;
+    }
+    .contenedor .inicio_cont .inicio_cont__{
+        width: 100%;
+    }
+    .contenedor .contenido__cont{
+        grid-template-rows: 100px 1fr 1fr 1fr 1fr 1fr 1fr 1fr  ;
+        grid-template-areas: "titulo titulo titulo "
+                            "texto texto texto"
+                            "texto texto texto"
+                            "texto texto texto"
+                            "texto texto texto"
+                             "texto texto texto"
+                            "img img img"
+                            "img img img"
+                            "img img img"
+    
+    ;
+        height: 900px;
+        width:35rem;
+        margin:4rem auto;
+    }
+
+    .contenedor .card_cont{
+        display: flex;
+        font-family: var(--fuente1);
+        margin-top: 3rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+}
+
+@media (max-width:700px){
+    .contenedor .slider-cont{
+        width: 400px;
+        height: 200px;
+}
+
+    header .texto__banner h1{
+        font-size: 30px;
+    }
+
+    .contenedor .texto__banner p{
+        font-size: 15px;
+        margin:auto;
+        width: fit-content;
+        height: 100px;
+    }
+
+    /* .contenedor .info-cards {
+        margin: auto;
+        height: fit-content;
+    } */
+
+    .contenedor .info-cards article img{
+        width: 12rem;
+        height: 12rem;
+        background-color: black;
+    }
+    .contenedor .info-cards article::after{
+        height: 20%;
+        width: 100%;
+     }
+     .contenedor .contenido__cont{
+        grid-template-rows: 100px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr  ;
+        grid-template-areas: "titulo titulo titulo "
+                            "texto texto texto"
+                            "texto texto texto"
+                            "texto texto texto"
+                            "texto texto texto"
+                             "texto texto texto"
+                             "texto texto texto"
+                            "img img img"
+                            "img img img"
+                            "img img img"
+                            
+    
+    ;
+        height: 1000px;
+        width:30rem;
+        margin:4rem auto;
+    }
+
+    footer .frase{
+        grid-area: texto;
+        font-size: 20px;
+        margin: auto;
+    }
+}
+
+@media (max-width:500px) {
+    .contenedor .info-cards article img{
+        width: 10.5rem;
+        height: 10.5rem;
+        background-color: black;
+    }
+    .contenedor .info-cards article::after{
+
+        height: 15%;
+
+     }
+
+     .contenedor .footer__cont{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "logo tslp "
+                              "mapa texto "
+                            "contacto contacto ";
+        height: 70rem;
+    }
+
+    footer .frase{
+        grid-area: texto;
+        font-size: 18px;
+        margin: auto auto auto 2rem;
+    }
+
+}
+
+@media (max-width:400px) {
+    header .texto__banner h1{
+        font-size: 20px;
+        margin: 10px 0 10px 0;
+    }
+
+    header .texto__banner h1:hover{
+        font-size: 22px;
+    }
+
+
+    .contenedor .slider-cont{
+        width: 320px;
+        height: 200px;
+        margin:auro
+}
+
+.contenedor .contenido__cont{
+    grid-template-rows: 100px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-areas: "titulo titulo titulo "
+                        "texto texto texto"
+                        "texto texto texto"
+                        "texto texto texto"
+                        "texto texto texto"
+                         "texto texto texto"
+                         "texto texto texto"
+                        "img img img"
+                        "img img img"
+                        "img img img"
+
+;
+    height: 1300px;
+    width: 22rem;
+}
+
+footer .mapa{
+    height: 160px;
+    width: 160px;
+    grid-area: mapa;
+    margin: auto;
+}
+
+.footer__cont article .logos{
+    font-size: 40px;
+    width: 50px;
+    height: 50px;
+}
+
+.contenedor .footer__cont{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "logo tslp "
+                          "mapa texto "
+                        "contacto contacto ";
+    height: 70rem;
+}
+
+.contenedor .info-cards article {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 40rem;
+    justify-content: space-around;
+    align-items: center;
+}
+ .contenedor .info-cards article p{
+    width: fit-content;
+}
+
+.contenedor .info-cards article button{
+    margin: 1rem auto;
+ }
+
+ .contenedor .info-cards article p .impar {
+    margin: 1rem auto;
+ }
+
+ .contenedor .info-cards article img{
+    border-radius: 50%;
+    box-shadow: 0px 10px 10px rgba(128, 128, 128, 0.363);
+ }
+ .inicio_cont .imgcont{
+    margin: 100px;
+    position: relative;
+
+}
+.contenedor .inicio_cont img{
+    width: 350px;
+    margin: 40px auto 0 auto;
+    padding: 3rem;
+}
+
+.contenedor .titulo2-cont article h1{
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-family: var(--fuente2);
+    font-size: 40px;
+    justify-content: center;
+    background: var(--colorg);
+    width: 300px;
+    margin: auto;
+
+
+}
+
+.contenedor nav {
+    font-size: 8px;
+}
+
+.contenedor nav ul li a{
+    font-size: 0px;
+    margin: .5rem auto auto auto;
+}
+}
